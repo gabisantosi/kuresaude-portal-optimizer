@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <>
+    <div className="clinic_version">
       <Helmet>
         <title>Kure Saúde - Consultoria Especializada em Saúde Digital | Telemedicina e Gestão de Saúde</title>
         <meta name="description" content="A Kure Saúde oferece soluções inovadoras em saúde digital, incluindo telemedicina, consultoria em gestão de saúde e tecnologia para profissionais e pacientes. Conectamos pacientes e serviços de saúde de forma eficiente e acessível." />
@@ -17,7 +17,7 @@ const Index = () => {
       <Hero />
       <Services />
       <Footer />
-    </>
+    </div>
   );
 };
 

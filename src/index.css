@@ -74,3 +74,48 @@
     @apply bg-background text-foreground;
   }
 }
+
+.clinic_version {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-top {
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.header-bottom {
+  background-color: #498da5;
+}
+
+.first-section {
+  background-image: url('/images/slider-bg.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.time-table-section {
+  background-color: #498da5;
+  color: #fff;
+}
+
+.service-time {
+  background-color: #498da5;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.footer-area {
+  background-color: #498da5;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.copyright-area {
+  background-color: #2a5261;
+  color: #fff;
+  padding: 20px 0;
+}
