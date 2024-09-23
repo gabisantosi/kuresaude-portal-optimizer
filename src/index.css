@@ -58,39 +58,56 @@
   }
 }
 
+/* Custom styles */
 .clinic_version {
   font-family: 'Roboto', sans-serif;
 }
 
 .header-top {
-  @apply bg-white py-2;
+  background-color: #fff;
+  padding: 10px 0;
 }
 
 .header-bottom {
-  @apply bg-primary;
+  background-color: #498da5;
 }
 
 .first-section {
-  background-image: url('/images/slider-bg.png');
-  @apply bg-cover bg-center min-h-screen flex items-center;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .time-table-section {
-  @apply bg-primary text-white;
+  background-color: #498da5;
+  color: #fff;
+  padding: 50px 0;
 }
 
 .service-time {
-  @apply bg-primary p-6 rounded-lg;
+  background-color: #498da5;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .footer-area {
-  @apply bg-primary text-white py-12;
+  background-color: #498da5;
+  color: #fff;
+  padding: 60px 0;
 }
 
 .copyright-area {
-  @apply bg-[#2a5261] text-white py-4;
+  background-color: #2a5261;
+  color: #fff;
+  padding: 20px 0;
 }
 
 .typewrite {
-  @apply text-4xl font-bold;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
+
+/* Add any additional custom styles here */

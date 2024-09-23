@@ -1,26 +1,27 @@
 import React from 'react';
-import { UserIcon, SmartphoneIcon, UserCheck } from 'lucide-react';
 
 const ServiceCard = ({ icon, title, description, buttonText, buttonLink, color }) => (
-  <div className={`service-time ${color} text-white`}>
-    <span className="info-icon mb-4">{icon}</span>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="mb-4">{description}</p>
-    <div className="center">
-      <a href={buttonLink} className="inline-block bg-white text-primary px-4 py-2 rounded hover:bg-gray-100 transition duration-300">
-        {buttonText}
-      </a>
+  <div className={`col-lg-4 col-md-4 col-sm-12 col-xs-12`}>
+    <div className={`row`}>
+      <div className={`service-time ${color}`}>
+        <span className="info-icon"><i className={`fa ${icon}`} aria-hidden="true"></i></span>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <div className="center">
+          <a href={buttonLink} className="btn btn-light btn-radius btn-brd grd1 effect-1">{buttonText}</a>
+        </div>
+      </div>
     </div>
   </div>
 );
 
 const Services = () => {
   return (
-    <section id="time-table" className="time-table-section py-20">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div id="time-table" className="time-table-section">
+      <div className="container">
+        <div className="row">
           <ServiceCard
-            icon={<UserIcon size={48} />}
+            icon="fa-user"
             title="Consultoria em Saúde Digital"
             description="Soluções inovadoras para otimizar seus serviços de saúde"
             buttonText="Entre em contato"
@@ -28,7 +29,7 @@ const Services = () => {
             color="one"
           />
           <ServiceCard
-            icon={<SmartphoneIcon size={48} />}
+            icon="fa-mobile"
             title="Telemedicina"
             description="Consultas online via smartphone ou tablet"
             buttonText="Saiba mais"
@@ -36,7 +37,7 @@ const Services = () => {
             color="middle"
           />
           <ServiceCard
-            icon={<UserCheck size={48} />}
+            icon="fa-user-md"
             title="Para Profissionais de Saúde"
             description="Gerencie consultas, agendamentos e faturamento"
             buttonText="Cadastre-se"
@@ -45,7 +46,7 @@ const Services = () => {
           />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,65 +1,57 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Linkedin, Facebook, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer>
-      <div id="footer" className="footer-area">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="logo padding">
-                <Link to="/"><img src="/images/logo.png" alt="Kure Saúde Logo" className="h-12 mb-4" /></Link>
-                <p>Transformando o acesso à saúde através da tecnologia e inovação.</p>
-              </div>
+    <footer id="footer" className="footer-area wow fadeIn">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-4">
+            <div className="logo padding">
+              <Link to="/"><img src="/images/logo.png" alt="Kure Saúde Logo" /></Link>
+              <p>Transformando o acesso à saúde através da tecnologia e inovação.</p>
             </div>
-            <div>
-              <div className="footer-info padding">
-                <h3 className="text-xl font-semibold mb-4">Contato</h3>
-                <p><i className="fa fa-paper-plane mr-2"></i> info@kuresaude.com</p>
-                <p><i className="fa fa-map-marker mr-2"></i> São Paulo, SP - Brasil</p>
-              </div>
+          </div>
+          <div className="col-md-4">
+            <div className="footer-info padding">
+              <h3>Contato</h3>
+              <p><i className="fa fa-paper-plane" aria-hidden="true"></i> info@kuresaude.com</p>
+              <p><i className="fa fa-map-marker" aria-hidden="true"></i> São Paulo, SP - Brasil</p>
             </div>
-            <div>
-              <div className="subcriber-info">
-                <h3 className="text-xl font-semibold mb-4">Newsletter</h3>
-                <p>Receba novidades e atualizações da Kure Saúde</p>
-                <form className="mt-4">
-                  <input type="email" placeholder="Seu e-mail" className="w-full px-4 py-2 rounded-l-md" />
-                  <button type="submit" className="bg-white text-primary px-4 py-2 rounded-r-md hover:bg-gray-100 transition duration-300">
-                    <i className="fa fa-paper-plane"></i>
-                  </button>
+          </div>
+          <div className="col-md-4">
+            <div className="subcriber-info">
+              <h3>Newsletter</h3>
+              <p>Receba novidades e atualizações da Kure Saúde</p>
+              <div className="subcriber-box">
+                <form id="mc-form" className="mc-form">
+                  <div className="newsletter-form">
+                    <input type="email" autoComplete="off" id="mc-email" placeholder="Seu e-mail" className="form-control" name="EMAIL" />
+                    <button className="mc-submit" type="submit"><i className="fa fa-paper-plane"></i></button> 
+                    <div className="clearfix"></div>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="copyright-area">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="footer-text">
-              <p>© 2024 Kure Saúde. Todos os direitos reservados.</p>
+      <div className="copyright-area wow fadeIn">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8">
+              <div className="footer-text">
+                <p>© 2024 Kure Saúde. Todos os direitos reservados.</p>
+              </div>
             </div>
-            <div className="social mt-4 md:mt-0">
-              <ul className="flex space-x-4">
-                <li>
-                  <a href="https://www.linkedin.com/company/kure-sa%C3%BAde" target="_blank" rel="noopener noreferrer">
-                    <Linkedin className="text-white hover:text-gray-300" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/kuresaude" target="_blank" rel="noopener noreferrer">
-                    <Facebook className="text-white hover:text-gray-300" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/cs_gestao_em_saude/" target="_blank" rel="noopener noreferrer">
-                    <Instagram className="text-white hover:text-gray-300" />
-                  </a>
-                </li>
-              </ul>
+            <div className="col-md-4">
+              <div className="social">
+                <ul className="social-links">
+                  <li><a href="https://www.linkedin.com/company/kure-sa%C3%BAde" target="_blank"><i className="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.facebook.com/kuresaude" target="_blank"><i className="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/cs_gestao_em_saude/" target="_blank"><i className="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
