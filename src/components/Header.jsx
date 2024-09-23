@@ -6,7 +6,7 @@ const Header = () => {
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          <img src="/images/kure-logo.png" alt="Kure Saúde Logo" className="h-12 mr-3" />
+          <img src="https://via.placeholder.com/50x50.png?text=KS" alt="Kure Saúde Logo" className="h-12 w-12 mr-3" />
           <span className="text-2xl font-semibold text-gray-800">Kure Saúde</span>
         </Link>
         <nav>

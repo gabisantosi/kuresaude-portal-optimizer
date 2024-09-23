@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <img src="/images/about-image.jpg" alt="Equipe Kure Saúde" className="rounded-lg shadow-xl" />
+            <img src="https://via.placeholder.com/600x400.png?text=Equipe+Kure+Saude" alt="Equipe Kure Saúde" className="rounded-lg shadow-xl" />
           </div>
           <div className="md:w-1/2 md:pl-12">
             <h2 className="text-3xl font-bold mb-6">Sobre a Kure Saúde</h2>

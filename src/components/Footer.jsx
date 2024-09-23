@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
-            <img src="/images/kure-logo-white.png" alt="Kure Saúde Logo" className="h-12 mb-4" />
+            <img src="https://via.placeholder.com/150x50.png?text=Kure+Saude" alt="Kure Saúde Logo" className="h-12 mb-4" />
             <p className="text-gray-400">Transformando o acesso à saúde através da tecnologia e inovação.</p>
           </div>
           <div className="w-full md:w-1/3 mb-8 md:mb-0">

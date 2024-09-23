@@ -14,7 +14,7 @@ const Hero = () => {
             </Link>
           </div>
           <div className="md:w-1/2">
-            <img src="/images/hero-image.jpg" alt="Saúde Digital" className="rounded-lg shadow-xl" />
+            <img src="https://via.placeholder.com/600x400.png?text=Saude+Digital" alt="Saúde Digital" className="rounded-lg shadow-xl" />
           </div>
         </div>
       </div>
