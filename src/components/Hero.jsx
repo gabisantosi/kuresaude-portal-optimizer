@@ -1,19 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div id="home" className="parallax first-section wow fadeIn" data-stellar-background-ratio="0.4" style={{backgroundImage: "url('/images/slider-bg.png')"}}>
-      <div className="container mx-auto px-4 text-center">
-        <div className="row">
-          <div className="col-md-12 col-sm-12">
-            <div className="text-contant">
-              <h2>
-                <span className="center"><span className="icon"><img src="/images/icon-logo.png" alt="Kure Saúde Icon" /></span></span>
-                <a href="" className="typewrite" data-period="2000" data-type='["Bem-vindo à Kure Saúde.", "Líder em saúde digital.", "Saúde ao toque do seu dedo."]'>
-                  <span className="wrap"></span>
-                </a>
-              </h2>
-            </div>
+    <div className="bg-blue-600 text-white py-20">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 mb-10 md:mb-0">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Transformando a Saúde Digital</h1>
+            <p className="text-xl mb-8">Soluções inovadoras em telemedicina e gestão de saúde para profissionais e instituições.</p>
+            <Link to="#contact" className="bg-white text-blue-600 py-3 px-6 rounded-full font-semibold hover:bg-blue-100 transition duration-300">
+              Fale Conosco
+            </Link>
+          </div>
+          <div className="md:w-1/2">
+            <img src="/images/hero-image.jpg" alt="Saúde Digital" className="rounded-lg shadow-xl" />
           </div>
         </div>
       </div>

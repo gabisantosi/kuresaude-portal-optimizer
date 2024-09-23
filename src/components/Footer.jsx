@@ -3,57 +3,41 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer id="footer" className="footer-area wow fadeIn">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4">
-            <div className="logo padding">
-              <Link to="/"><img src="/images/logo.png" alt="Kure Saúde Logo" /></Link>
-              <p>Transformando o acesso à saúde através da tecnologia e inovação.</p>
-            </div>
+    <footer className="bg-gray-800 text-white py-12">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap justify-between">
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
+            <img src="/images/kure-logo-white.png" alt="Kure Saúde Logo" className="h-12 mb-4" />
+            <p className="text-gray-400">Transformando o acesso à saúde através da tecnologia e inovação.</p>
           </div>
-          <div className="col-md-4">
-            <div className="footer-info padding">
-              <h3>Contato</h3>
-              <p><i className="fa fa-paper-plane" aria-hidden="true"></i> info@kuresaude.com</p>
-              <p><i className="fa fa-map-marker" aria-hidden="true"></i> São Paulo, SP - Brasil</p>
-            </div>
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
+            <h3 className="text-lg font-semibold mb-4">Links Rápidos</h3>
+            <ul className="space-y-2">
+              <li><Link to="/" className="text-gray-400 hover:text-white">Início</Link></li>
+              <li><Link to="#services" className="text-gray-400 hover:text-white">Serviços</Link></li>
+              <li><Link to="#about" className="text-gray-400 hover:text-white">Sobre</Link></li>
+              <li><Link to="#contact" className="text-gray-400 hover:text-white">Contato</Link></li>
+            </ul>
           </div>
-          <div className="col-md-4">
-            <div className="subcriber-info">
-              <h3>Newsletter</h3>
-              <p>Receba novidades e atualizações da Kure Saúde</p>
-              <div className="subcriber-box">
-                <form id="mc-form" className="mc-form">
-                  <div className="newsletter-form">
-                    <input type="email" autoComplete="off" id="mc-email" placeholder="Seu e-mail" className="form-control" name="EMAIL" />
-                    <button className="mc-submit" type="submit"><i className="fa fa-paper-plane"></i></button> 
-                    <div className="clearfix"></div>
-                  </div>
-                </form>
-              </div>
+          <div className="w-full md:w-1/3">
+            <h3 className="text-lg font-semibold mb-4">Contato</h3>
+            <p className="text-gray-400 mb-2"><i className="fas fa-envelope mr-2"></i> info@kuresaude.com</p>
+            <p className="text-gray-400 mb-4"><i className="fas fa-map-marker-alt mr-2"></i> São Paulo, SP - Brasil</p>
+            <div className="flex space-x-4">
+              <a href="https://www.linkedin.com/company/kure-sa%C3%BAde" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                <i className="fab fa-linkedin fa-lg"></i>
+              </a>
+              <a href="https://www.facebook.com/kuresaude" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                <i className="fab fa-facebook fa-lg"></i>
+              </a>
+              <a href="https://www.instagram.com/cs_gestao_em_saude/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                <i className="fab fa-instagram fa-lg"></i>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-      <div className="copyright-area wow fadeIn">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <div className="footer-text">
-                <p>© 2024 Kure Saúde. Todos os direitos reservados.</p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="social">
-                <ul className="social-links">
-                  <li><a href="https://www.linkedin.com/company/kure-sa%C3%BAde" target="_blank"><i className="fa fa-linkedin"></i></a></li>
-                  <li><a href="https://www.facebook.com/kuresaude" target="_blank"><i className="fa fa-facebook"></i></a></li>
-                  <li><a href="https://www.instagram.com/cs_gestao_em_saude/" target="_blank"><i className="fa fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p className="text-gray-400">&copy; 2024 Kure Saúde. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
