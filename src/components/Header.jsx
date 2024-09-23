@@ -12,7 +12,7 @@ const Header = () => {
           <div className="right-header">
             <div className="header-info">
               <span className="icontop"><i className="fa fa-envelope"></i></span>
-              <span className="iconcont"><a href="mailto:info@kuresaude.com">info@kuresaude.com</a></span>	
+              <span className="iconcont"><a href="mailto:info@kuresaude.com" className="text-primary hover:text-primary-dark">info@kuresaude.com</a></span>	
             </div>
           </div>
         </div>

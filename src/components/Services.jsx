@@ -1,13 +1,13 @@
 import React from 'react';
-import { UserIcon, MobileIcon, UserMdIcon } from 'lucide-react';
+import { UserIcon, SmartphoneIcon, UserCheck } from 'lucide-react';
 
 const ServiceCard = ({ icon, title, description, buttonText, buttonLink, color }) => (
-  <div className={`service-time ${color} p-6 rounded-lg shadow-md text-white`}>
+  <div className={`service-time ${color} text-white`}>
     <span className="info-icon mb-4">{icon}</span>
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
     <p className="mb-4">{description}</p>
     <div className="center">
-      <a href={buttonLink} className="inline-block bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100 transition duration-300">
+      <a href={buttonLink} className="inline-block bg-white text-primary px-4 py-2 rounded hover:bg-gray-100 transition duration-300">
         {buttonText}
       </a>
     </div>
@@ -28,7 +28,7 @@ const Services = () => {
             color="one"
           />
           <ServiceCard
-            icon={<MobileIcon size={48} />}
+            icon={<SmartphoneIcon size={48} />}
             title="Telemedicina"
             description="Consultas online via smartphone ou tablet"
             buttonText="Saiba mais"
@@ -36,7 +36,7 @@ const Services = () => {
             color="middle"
           />
           <ServiceCard
-            icon={<UserMdIcon size={48} />}
+            icon={<UserCheck size={48} />}
             title="Para Profissionais de Saúde"
             description="Gerencie consultas, agendamentos e faturamento"
             buttonText="Cadastre-se"
